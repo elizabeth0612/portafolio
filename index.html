@@ -8,39 +8,66 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <header class="contenedor header">
-        <span>Hola, soy</span>
-        <h1 class="header__nombre">Elizabeth <br>Marin</h1>
-        <span>Full Stack Developer, apassionado por el desarrollo Fronted.</span>
-        <div class="header-botones">
-            <a class="header-boton" href="cv/elizabeth-cv.pdf" download="elizabeth-cv.pdf">Descargar-Cv</a>
-            <a class="header-boton" target="_blank" href="https://wa.me/51934123971">Contactame</a>
+    <header class="contenedor ">
+        <div class="nav__container">
+            <nav class="nav">
+                <div class="nav__header">Portafolio</div>
+                    <div class="nav__links">
+                    <a href="" class="nav__link">Inicio</a>
+                    <a href="#about" class="nav__link">Acerca</a>
+                    <a href="#services" class="nav__link" >Conocimientos</a>
+                    <a href="#certification" class="nav__link">Certificados</a>
+                    <a href="#projects" class="nav__link">Proyectos</a>
+                    <a href="" class="nav__link">Contact</a>
+                </div>
+            </nav>
+        </div>
+        <div class="greeting">
+           <div class="greeting__texto">
+            <span>Hola, soy</span>
+            <h1 class="greeting__header">Elizabeth Marin</h1>
+            <span>Full Stack Developer, apassionado por el desarrollo Fronted.</span>
+            <div class="nav__redes-sociales">
+                <a href="https://www.linkedin.com/in/elizabeth-marin-503a8b247/" target="_blank" class="nav__link"><i class="bi bi-linkedin"></i></a>
+                <a href="https://wa.me/51934123971" target="_blank" class="nav__link"><i class="bi bi-whatsapp"></i></a>
+            </div>
+            <div class="greeting__buttons">
+                <a class="greeting__button" href="cv/elizabeth-cv.pdf" download="elizabeth-cv.pdf">Descargar-Cv</a>
+                <a class="greeting__button"  target="_blank" href="https://wa.me/51934123971">Contactame</a>
+            </div>
+           </div>
+           <div class="greeting__img">
+                <img src="img/foto-cv.jpeg" alt="">
+           </div>
+            
         </div>
     </header>
 
     <main>
-        <div class="contenedor contenedor__informacion">
-           <div class="informacion__img">
-                <img src="img/foto-cv.jpeg" alt="">
-           </div>
-           <div class="informacion__texto">
-            <span>Quien soy</span><br>
-            <h1 class="informacion__header">Sobre mí</h1>
-            <p>
-                Soy un desarrollador Full Stack apasionado por el desarrollo Frontend. 
-                Tengo experiencia en diversos lenguajes y tecnologías, incluyendo HTML, CSS, JavaScript, 
-                Node.js, React, y más. Me encanta crear aplicaciones web modernas y 
-                responsivas que brinden una experiencia de usuario excepcional.
-            </p>
-            <nav class="nav__icons">
-                <a href="https://www.linkedin.com/in/elizabeth-marin-503a8b247/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                <a href="https://wa.me/51934123971" target="_blank"><i class="bi bi-whatsapp"></i></a>
-              </nav>
+        <div class=" fondo__information " >
+           <div class=" contenedor container__information" id="about">
+                <div class="information__img">
+                    <img src="img/foto-cv.jpeg" alt="">
+            </div>
+            <div class="information__texto">
+                <span>Quien soy</span><br>
+                <h1 class="informacion__header">Sobre mí</h1>
+                <p>
+                    Soy un desarrollador Full Stack apasionado por el desarrollo Frontend. 
+                    Tengo experiencia en diversos lenguajes y tecnologías, incluyendo HTML, CSS, JavaScript, 
+                    Node.js, React, y más. Me encanta crear aplicaciones web modernas y 
+                    responsivas que brinden una experiencia de usuario excepcional.
+                </p>
+                <div class="nav__redes-sociales">
+                    <a href="https://www.linkedin.com/in/elizabeth-marin-503a8b247/" target="_blank" class="nav__link"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://wa.me/51934123971" target="_blank" class="nav__link"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
            </div>
             
         </div>
-        <div class=" contenedor__tecnologias contenedor">
-            <div class=" contenido__tecnologias">
+        <div class="  container__services contenedor" id="services">
+            <div class="services__items">
                 <div class="tecnologias__item">
                     <div class="tecnologia__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -117,49 +144,199 @@
                 </div>
             </div>    
         </div>
-        <div class="contenedor contenedor__proyectos">
-            <h2 class="proyecto__header">Algunos de mis proyectos</h2>
-            <div class="proyectos">
-                <div class="proyecto__item">
-                    <div class="proyecto__img">
-                        <a href="https://elizabeth0612.github.io/buscador/"><img src="img/buscador.JPG" alt="Buscador de datos dinámico"></a>
+        <div class="contenedor container__certificados" >
+            <h2 class="certificado__header">Certificados</h2>
+            <div class="container__certificados-items" id="certification">
+                <div class="certificado__item">
+                    <div class="certificado__img">
+                        <img src="img/Curso_Practico_de_HTML_y_CSS.webp" alt="">
                     </div>
-                    <div class="proyecto__informacion">
-                        <h3>Buscador de datos dinámico</h3>
-                        <ul>
-                            <li>Filtrado de datos dinámico</li>
-                            <li>Código con clases JS</li>
-                        </ul>
+                    <div class="certificado__header">
+                        <h2>Curso Práctico de HTML y CSS</h2>
                     </div>
+                    <a target="_blank" href="./certificado-platzi/diploma-html-practico.pdf" class="certificado__icon">
+                        <i class="bi bi-eye"></i>
+                    </a>
                 </div>
-                <div class="proyecto__item">
-                    <div class="proyecto__img">
-                        <a href="https://elizabeth0612.github.io/citas/"><img src="img/crud.JPG" alt="Sistema CRUD"></a>
+                <div class="certificado__item">
+                    <div class="certificado__img">
+                        <img src="img/Curso_Practico_de_Maquetación_en_CSS.webp" alt="">
                     </div>
-                    <div class="proyecto__informacion">
-                        <h3>Sistema CRUD</h3>
-                        <p>Implementación completa de CRUD (Crear, Leer, Actualizar, Eliminar) con clases y funciones en JavaScript. Gestión de datos eficiente y organizada con una interfaz intuitiva.</p>
+                    <div class="certificado__header">
+                        <h2>Curso Práctico de Maquetación en CSS</h2>
                     </div>
+                    <a target="_blank" href="./certificado-platzi/diploma-practico-css.pdf" class="certificado__icon">
+                        <i class="bi bi-eye"></i>
+                    </a>
                 </div>
-                <div class="proyecto__item">
-                    <div class="proyecto__img">
-                        <a href="https://elizabeth0612.github.io/carrito/"><img src="img/carrito.JPG" alt="Carrito de compras"></a>
+                <div class="certificado__item">
+                    <div class="certificado__img">
+                        <img src="img/Curso_Practico_de_Frontend_Developer.webp" alt="">
                     </div>
-                    <div class="proyecto__informacion">
-                        <h3>Carrito de compras</h3>
-                        <p>Implementación de un carrito de compras que utiliza LocalStorage para almacenar productos de forma persistente. Los productos permanecen en el carrito incluso al cerrar la ventana o navegar por otras páginas.</p>
+                    <div class="certificado__header">
+                        <h2>Curso Practico de Frontend Developer</h2>
                     </div>
+                    <a target="_blank" href="./certificado-platzi/diploma-frontend-developer-practico.pdf" class="certificado__icon">
+                        <i class="bi bi-eye"></i>
+                    </a>
                 </div>
-                <div class="proyecto__item">
-                    <div class="proyecto__img">
-                        <a href="https://elizabeth0612.github.io/tienda-guitarras/"><img src="img/guitarra.JPG" alt="Tienda de guitarras"></a>
+                <div class="certificado__item">
+                    <div class="certificado__img">
+                        <img src="img/Curso_de_Frontend_Developer.webp" alt="">
                     </div>
-                    <div class="proyecto__informacion">
-                        <h3>Diseño de Tienda de guitarras</h3>
-                        </div>
+                    <div class="certificado__header">
+                        <h2>Curso de Frontend Developer</h2>
+                    </div>
+                    <a target="_blank" href="./certificado-platzi/diploma-frontend-developer.pdf" class="certificado__icon">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+                <div class="certificado__item">
+                    <div class="certificado__img">
+                        <img src="img/Curso_de_CSS_Grid_Basico.webp" alt="">
+                    </div>
+                    <div class="certificado__header">
+                        <h2>Curso de CSS Grid Básico</h2>
+                    </div>
+                    <a target="_blank" href="./certificado-platzi/diploma-css-grid.pdf" class="certificado__icon">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+                <div class="certificado__item">
+                    <div class="certificado__img">
+                        <img src="img/Curso_Profesional_de_CSS_Grid_Layout.webp" alt="">
+                    </div>
+                    <div class="certificado__header">
+                        <h2>Curso Profesional de CSS Grid Layout</h2>
+                    </div>
+                    <a target="_blank" href="./certificado-platzi/diploma-css-grid-layout.pdf" class="certificado__icon">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+                <div class="certificado__item">
+                    <div class="certificado__img">
+                        <img src="img/Curso_Basico_de_JavaScript.webp" alt="">
+                    </div>
+                    <div class="certificado__header">
+                        <h2>Curso Básico de JavaScript</h2>
+                    </div>
+                    <a target="_blank" href="./certificado-platzi/diploma-basico-javascript.pdf" class="certificado__icon">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+                <div class="certificado__item">
+                    <div class="certificado__img">
+                        <img src="img/Curso_Practico_de_JavaScript.webp" alt="">
+                    </div>
+                    <div class="certificado__header">
+                        <h2>Curso Práctico de JavaScript</h2>
+                    </div>
+                    <a target="_blank" href="./certificado-platzi/diploma-javascript-practico.pdf" class="certificado__icon">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+                <div class="certificado__item">
+                    <div class="certificado__img">
+                        <img src="img/Curso_de_Fundamentos_de_TypeScript.webp" alt="">
+                    </div>
+                    <div class="certificado__header">
+                        <h2>Curso de Fundamentos de TypeScript</h2>
+                    </div>
+                    <a target="_blank" href="./certificado-platzi/diploma-typescript.pdf" class="certificado__icon">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+                <div class="certificado__item">
+                    <div class="certificado__img">
+                        <img src="img/Curso_Profesional_de_Git_y_GitHub.webp" alt="">
+                    </div>
+                    <div class="certificado__header">
+                        <h2>Curso Profesional de Git y GitHub</h2>
+                    </div>
+                    <a target="_blank" href="./certificado-platzi/diploma-git-github.pdf" class="certificado__icon">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+                <div class="certificado__item">
+                    <div class="certificado__img">
+                        <img src="img/Curso_Profesional_de_Scrum.webp" alt="">
+                    </div>
+                    <div class="certificado__header">
+                        <h2>Curso Profesional de Scrum</h2>
+                    </div>
+                    <a target="_blank" href="./certificado-platzi/diploma-scrum.pdf" class="certificado__icon">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+                <div class="certificado__item">
+                    <div class="certificado__img">
+                        <img src="img/Curso_de_Introducción_a_Java_SE.webp" alt="">
+                    </div>
+                    <div class="certificado__header">
+                        <h2>Curso de Introducción a Java SE</h2>
+                    </div>
+                    <a target="_blank" href="./certificado-platzi/diploma-java-basico.pdf" class="certificado__icon">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+                <div class="certificado__item">
+                    <div class="certificado__img">
+                        <img src="img/Curso_de_Introduccion_al_Desarrollo_Backend.webp" alt="">
+                    </div>
+                    <div class="certificado__header">
+                        <h2>Curso de Introducción al Desarrollo Backend</h2>
+                    </div>
+                    <a target="_blank" href="./certificado-platzi/diploma-backend-introduccion.pdf" class="certificado__icon">
+                        <i class="bi bi-eye"></i>
+                    </a>
                 </div>
             </div>
         </div>
+        <div class="contenedor container__projects">
+    <h2 class="projects__header">Algunos de mis proyectos</h2>
+    <div class="projects" id="projects">
+        <div class="projects__item">
+            <div class="projects__img">
+                <a href="https://elizabeth0612.github.io/buscador/"  target="_blank"><img src="img/buscador.JPG" alt="Buscador de datos dinámico"></a>
+            </div>
+            <div class="projects__information">
+                <h3>Buscador de datos dinámico</h3>
+                <ul>
+                    <li>Filtrado de datos dinámico</li>
+                    <li>Código con clases JS</li>
+                </ul>
+            </div>
+        </div>
+        <div class="projects__item">
+            <div class="projects__img">
+                <a href="https://elizabeth0612.github.io/citas/" target="_blank"><img src="img/crud.JPG" alt="Sistema CRUD"></a>
+            </div>
+            <div class="projects__information">
+                <h3>Sistema CRUD</h3>
+                <p>Implementación completa de CRUD (Crear, Leer, Actualizar, Eliminar) con clases y funciones en JavaScript. Gestión de datos eficiente y organizada con una interfaz intuitiva.</p>
+            </div>
+        </div>
+        <div class="projects__item">
+            <div class="projects__img">
+                <a href="https://elizabeth0612.github.io/carrito/" target="_blank"><img src="img/carrito.JPG" alt="Carrito de compras"></a>
+            </div>
+            <div class="projects__information">
+                <h3>Carrito de compras</h3>
+                <p>Implementación de un carrito de compras que utiliza LocalStorage para almacenar productos de forma persistente. Los productos permanecen en el carrito incluso al cerrar la ventana o navegar por otras páginas.</p>
+            </div>
+        </div>
+        <div class="projects__item">
+            <div class="projects__img">
+                <a href="https://elizabeth0612.github.io/tienda-guitarras/" target="_blank"><img src="img/guitarra.JPG" alt="Tienda de guitarras"></a>
+            </div>
+            <div class="projects__information">
+                <h3>Diseño de Tienda de guitarras</h3>
+                <p>Diseño de tienda de guitarras.</p>
+                </div>
+        </div>
+    </div>
+    
+</div>
     </main>
 
     <footer id="footer">
