@@ -1,0 +1,277 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(32,33,36);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+span{
+    color: white;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.about {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+/* header */
+
+.contenedor{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.header{
+    display: grid;
+    place-content: center;
+    width: 500px;
+    height: 100vh;
+    /* background-color: #007bff; */
+}
+.header__nombre{
+    font-size: 80px;
+    color: transparent;
+    background: linear-gradient(to right,rgb(233,86,111) 20%, rgb(91,71,126) 88%, #007bff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.header-boton{
+    background-color: rgb(91,70,125);
+    border: none;
+    border-radius: 2px;
+    padding: 15px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+.header-botones{
+    margin: 20px 0;
+}
+
+/*informacion*/
+ .informacion__img{
+    width: 100%;
+ }
+ .informacion__img img{
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+
+ }
+ .contenedor__informacion{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    color: white;
+    place-items: center;
+    margin: 200px auto;
+    
+}
+@media (min-width: 640px) {
+    .contenedor__informacion{
+        row-gap: 100px;
+    }
+  }
+.informacion__img{
+    text-align: center;
+}
+.informacion__header{
+    font-size: 50px;
+}
+
+/*TECNOLOGIA*/
+.contenido__tecnologias{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    column-gap: 20px;
+    margin: 0px 150px;
+    justify-content: center;
+    row-gap: 30px;
+
+}
+.contenedor__tecnologias{
+    margin: 200px auto;
+}
+.tecnologia__header{
+    font-size: 40px;
+    color: white;
+}
+.tecnologia__icon {
+    width: 200px;
+    font-weight: bold;
+    color: rgb(94, 75, 128);
+    transition: color 0.3s ease-in-out; /* Agregar transición para el color */
+}
+
+.tecnologia__icon:hover {
+    color: rgb(128, 179, 224); /* Color de hover */
+}
+.tecnologia__button{
+    background-color: rgb(94,96,102);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 2px;
+    font-weight: bold;
+    margin: 5px;
+}
+.tecnologia__informacion{
+    text-align: center;
+}
+.tecnologias__item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/*proyectos*/
+.proyectos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    row-gap: 100px;
+}
+
+
+ .proyecto__img{
+    width: 100%;
+    grid-column: 1/2;
+    overflow: hidden;
+ }
+ 
+ .proyecto__img img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+ }
+ .proyecto__img img:hover {
+    transform: scale(0.8); /* Encoger un poco más al pasar el cursor */
+    /* Aumentar el tamaño de la imagen al pasar el cursor */
+    transition: transform 0.5s ease; /* Ajustar la duración de la transición */
+}
+
+
+ .proyecto__informacion{
+    grid-column: 1/2;
+    color: white;
+}
+.proyecto__item{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+ }
+@media (min-width: 640px) {
+    .proyecto__item{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+   
+    .proyecto__img{
+        width: 100%;
+        grid-column: 1/4;
+     }
+     .proyecto__informacion{
+        grid-column: 4/6;
+        padding-left: 30px;
+    } 
+  }
+.proyecto__header{
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+
+}
+.nav__icons a{
+    margin-left: 10px;
+    font-size: 20px;
+    color:rgb(233,86,111)  ;
+}
+/*footer*/
+#footer {
+    background-color: linear-gradient(to right, #f094c6, #eb4d4b); /* Degradado de rosa a naranja */
+    color: #fff; /* Texto blanco */
+    padding: 70px 0; /* Aumento del relleno superior e inferior */
+    text-align: center;
+    /* position: fixed; Posicionamiento fijo en la parte inferior */
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.3s ease; /* Transición para el cambio de color */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.container {
+    max-width: 1500px; /* Ancho máximo más amplio */
+    margin: 0 auto;
+    display: flex; /* Distribución en línea */
+    justify-content: space-between; /* Distribución del espacio entre elementos */
+    align-items: center; /* Alineación vertical de los elementos al centro */
+}
+
+.logo {
+    font-size: 52px; /* Tamaño de fuente aún más grande */
+    font-weight: bold; /* Peso de la fuente del logo */
+}
+
+.logo a {
+    color: #fff; /* Texto blanco */
+    text-decoration: none; /* Elimina la decoración del enlace */
+}
+
+.slogan {
+    font-size: 26px; /* Aumenta el tamaño del slogan */
+    margin-top: 25px; /* Mayor margen superior del slogan */
+    color: #fff; /* Texto blanco */
+}
+
+nav {
+    margin-right: 50px; /* Aumenta el margen derecho para la navegación */
+}
+
+nav ul {
+    list-style: none; /* Elimina puntos de viñeta */
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block; /* Muestra elementos de la lista en línea */
+    margin-right: 35px; /* Mayor margen entre elementos de la lista */
+}
+
+nav a {
+    color: #fff; /* Texto blanco */
+    text-decoration: none; /* Elimina la decoración del enlace */
+    font-size: 24px; /* Tamaño de fuente más grande para los enlaces */
+    transition: color 0.3s ease; /* Transición para el cambio de color al hover */
+}
